@@ -3,7 +3,7 @@ type Memory[_]
 
 ///|
 pub fn Memory::to_int[T](self : Memory[T]) -> Int {
-  let _ = self 
+  let _ = self
   panic()
 }
 

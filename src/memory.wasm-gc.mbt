@@ -13,7 +13,9 @@ pub fn Memory::length[T : Sized + Default + Get + Set](self : Memory[T]) -> Int 
 }
 
 ///|
-pub fn Memory::to_array[T : Sized + Default + Get + Set](self : Memory[T]) -> FixedArray[T] {
+pub fn Memory::to_array[T : Sized + Default + Get + Set](
+  self : Memory[T]
+) -> FixedArray[T] {
   let length = self.length()
   if length == 0 {
     return []
