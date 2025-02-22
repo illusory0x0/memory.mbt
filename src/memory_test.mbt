@@ -32,7 +32,7 @@ test "Bytes" {
 
 test "String" {
   let strings : FixedArray[String] = [
-    "hello", "world", "foo", "bar", "baz", "qux",
+    "hello", "world", "foo", "bar", "baz", "qux","你好","❤️🐬👋"
   ]
   for s in strings {
     let ptr = @memory.of_string(s)
